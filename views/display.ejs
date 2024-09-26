@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USERS LIST</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Gender</th>
+            <th>Address</th>
+        </tr>
+        <% information.forEach(info => { %>
+            <td><%= info.firstname %></td>
+            <td><%= info.lastname %></td>
+            <td><%= info.gender %></td>
+            <td><%= info.address %></td>
+        </tr>
+        <% }) %>
+    </table>
+    <br><br>
+    <a href="/">ADD USER</a>
+    <br>
+</body>
+</html>
